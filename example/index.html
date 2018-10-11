@@ -22,6 +22,18 @@
             display: block;
         }
 
+        .card-numbers-examples table {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-size: 15px;
+        }
+
+        .card-numbers-examples table tbody td {
+            border: 1px solid gray;
+            padding: 5px;
+        }
+
     </style>
     <div class="demo-container">
         <div class="card-wrapper"></div>
@@ -34,6 +46,80 @@
                 <input placeholder="CVC" type="number" name="cvc">
             </form>
         </div>
+        <div class="card-numbers-examples">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Visa</th>
+                            <th>Mastercard</th>
+                            <th>Maestro</th>
+                            <th>Amex</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4916402446316419</td>
+                            <td>5453709170884867</td>
+                            <td>639068299267</td>
+                            <td>343231959451904</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>4929461597210628</td>
+                            <td>5493028953046897</td>
+                            <td>676218284898</td>
+                            <td>372204286851934</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>4539470983330645</td>
+                            <td>5133832913807678</td>
+                            <td>060485978682</td>
+                            <td>376729061020574</td>
+                        </tr>
+                        <tr>
+                            <td>4929231693281504</td>
+                            <td>5156150289132288</td>
+                            <td>502071341338</td>
+                            <td>344818049577158</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Discover</th>
+                            <th>Diners</th>
+                            <th>Hipercard</th>
+                            <th>Dankort</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6011973936579400</td>
+                            <td>30173815569933</td>
+                            <td>6062822700882862</td>
+                            <td>5019678608576964</td>
+                        </tr>
+                        <tr>
+                            <td>6011588269247506</td>
+                            <td>30085608314451</td>
+                            <td>6062824745483920</td>
+                            <td>5019307495373687</td>
+                        </tr>
+                        <tr>
+                            <td>6011844674709535</td>
+                            <td>30338667830655</td>
+                            <td>6062826206315665</td>
+                            <td>5019975153310280</td>
+                        </tr>
+                        <tr>
+                            <td>6011144020084299</td>
+                            <td>36459595257961</td>
+                            <td>6062821902980276</td>
+                            <td>5019039625366006</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
     </div>
 
     <script src="http://localhost:8080/card.js"></script>

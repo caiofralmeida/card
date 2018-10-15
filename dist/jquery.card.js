@@ -178,7 +178,7 @@ var card =
 	  }
 
 	  Card.prototype.render = function() {
-	    var $cardContainer, baseWidth, name, obj, ref, ref1, selector, ua;
+	    var $cardContainer, baseWidth, card, j, len, name, obj, ref, ref1, ref2, selector, ua;
 	    QJ.append(this.$container, this.template(this.cardTemplate, extend({}, this.options.messages, this.options.placeholders)));
 	    ref = this.options.cardSelectors;
 	    for (name in ref) {
@@ -194,6 +194,13 @@ var card =
 	        console.error("Card can't find a " + name + " in your form.");
 	      }
 	      this["$" + name] = obj;
+	    }
+	    if (this.options.cardsToRemove) {
+	      ref2 = this.options.cardsToRemove;
+	      for (j = 0, len = ref2.length; j < len; j++) {
+	        card = ref2[j];
+	        Payment.removeFromCardArray(card);
+	      }
 	    }
 	    if (this.options.formatting) {
 	      Payment.formatCardNumber(this.$numberInput);

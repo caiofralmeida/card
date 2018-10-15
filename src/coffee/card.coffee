@@ -131,6 +131,10 @@ class Card
 
       console.error "Card can't find a #{name} in your form." if !obj.length and @options.debug
       this["$#{name}"] = obj
+    
+    if @options.cardsToRemove
+      for card in @options.cardsToRemove
+        Payment.removeFromCardArray(card)
 
     if @options.formatting
       Payment.formatCardNumber(@$numberInput)

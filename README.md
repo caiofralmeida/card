@@ -56,7 +56,10 @@ var card = new Card({
     },
 
     // if true, will log helpful messages for setting up Card
-    debug: false // optional - default false
+    debug: false, // optional - default false
+
+    // list of cards to remove. cards available (amex, dankort, hipercard, dinersclub, discover, jcb, laser, maestro, mastercard, unionpay, visaelectron, elo, visa)
+    cardsToRemove: [] // optional - default no card is removed
 });
 ```
 ### Installing card from bower
